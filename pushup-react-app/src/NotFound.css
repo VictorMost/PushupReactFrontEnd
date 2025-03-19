@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(circle at 50% 50%, #111, #000);
+  color: white;
+  /* height: 100vh; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.error-content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 50px 60px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.error-message {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 75, 43, 0.4);
+}
+
+.back-home:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
